@@ -139,7 +139,7 @@
   <body>
     <div id="myDIV" class="header">
       <h2 style="margin: 5px">My To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title..." />
+      <input type="text" id="myInput" placeholder="W h a t   w i l l   w e   d o   t o d a y  ?" />
       <span onclick="newElement()" class="addBtn">A D D</span>
     </div>
 
@@ -183,7 +183,7 @@
         var t = document.createTextNode(inputValue);
         li.appendChild(t);
         if (inputValue === "") {
-          alert("You must write something!");
+          console.log("You must write something!");
         } else {
           document.getElementById("myUL").appendChild(li);
         }
